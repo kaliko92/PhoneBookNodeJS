@@ -13,12 +13,13 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   };
-  Contact.init({
+  contact.init({
     type: DataTypes.STRING,
     value: DataTypes.STRING,
     personId: DataTypes.INTEGER,
   }, {
     sequelize,
+    freezeTableName: true,
     modelName: 'contact',
   });
   return contact;

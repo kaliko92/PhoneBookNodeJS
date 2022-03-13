@@ -8,13 +8,13 @@ async function save(req, res,next){
     const contact =  ({
         type: req.body.type,               
         value: req.body.value, 
-        personId: req.body.personId, 
+        personId: parseInt(req.body.personId), 
     });
 
     const schema = {
         type: {type:"string", optional:false, min:"1", max:"100"},
         value: {type:"string", optional:false, min:"1", max:"100"},
-        personId: {type:"integer", optional:false},
+        personId: {type:"number", optional:false},
     }
     const v = new Validator();
     const validationResponse = v.validate(contact, schema);
@@ -60,13 +60,13 @@ async function update(req, res) {
     const updatedContact = ({
         type: req.body.type,               
         value: req.body.value, 
-        personId: req.body.personId,
+        personId: parseInt(req.body.personId),
     });
 
     const schema = {
         type: {type:"string", optional:false, min:"1", max:"100"},
         value: {type:"string", optional:false, min:"1", max:"100"},
-        personId: {type:"integer", optional:false},
+        personId: {type:"number", optional:false},
     }
 
 

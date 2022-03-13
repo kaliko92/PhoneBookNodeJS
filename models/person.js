@@ -13,10 +13,11 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   };
-  Person.init({
+  person.init({
     name: DataTypes.STRING
   }, {
     sequelize,
+    freezeTableName: true,
     modelName: 'person',
   });
   return person;

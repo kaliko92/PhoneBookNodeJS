@@ -4,7 +4,7 @@ const checkAuthMiddleware = require('../middleware/check-auth');
 
 const router = express.Router();
 
-router.post("/contacts/contact", checkAuthMiddleware.checkAuth, imageUploader.upload.single('image'),  contactController.save);
+router.post("/contacts/contact", checkAuthMiddleware.checkAuth,  contactController.save);
 router.get("/contacts/contact", checkAuthMiddleware.checkAuth, contactController.index);
 router.get("/contacts/contact/:id", checkAuthMiddleware.checkAuth, contactController.show);
 router.patch("/contacts/contact/:id", checkAuthMiddleware.checkAuth, contactController.update);
