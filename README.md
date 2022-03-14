@@ -34,7 +34,7 @@ then try write previews command again -->
 |**Get**   |localhos:3000/api/people/person       | Get all people            |
 |**Get**   |localhos:3000/api/people/person/id    | Get a specific person     |
 |**Post**  |localhos:3000/api/people/person       | Create a new person       |
-|**Put**   |localhos:3000/api/people/person/id    | Update an existing person |
+|**Patch** |localhos:3000/api/people/person/id    | Update an existing person |
 |**Delete**|localhos:3000/api/people/person/id    | Delete an existing person |
 
 |**Method**| **URL**                              | **Action**                |
@@ -42,7 +42,7 @@ then try write previews command again -->
 |**Get**   |localhos:3000/api/contacts/contact       | Get all contacts           |
 |**Get**   |localhos:3000/api/contacts/contact/id    | Get a specific contact     |
 |**Post**  |localhos:3000/api/contacts/contact       | Create a new contact       |
-|**Put**   |localhos:3000/api/contacts/contact/id    | Update an existing contact |
+|**Patch** |localhos:3000/api/contacts/contact/id    | Update an existing contact |
 |**Delete**|localhos:3000/api/contacts/contact/id    | Delete an existing contact |
 
 
