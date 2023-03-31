@@ -1,0 +1,28 @@
+extends ../layouts/master
+block title
+    title People
+block content 
+    table.table
+        thead 
+            tr 
+                th ID
+                th Name 
+                th Operation
+        tbody
+            each person in people
+                tr 
+                    td= person.id 
+                    td= person.name 
+                    td 
+                        a.badge.badge-primary(href="person/#{person.id}")
+                            i.fa.fa-info-circle 
+                            span.hide-sm Info
+                        a.badge.badge-secondary(href="javascript:void(0)", onclick="editPerson(#{person.id})")
+                            i.fa.fa-edit 
+                            span.hide-sm Edit
+                        a.badge.badge-danger(href="javascript:void(0)", onclick="deletePerson(#{person.id})")
+                            i.fa.fa-danger 
+                            span.hide-sm Delete
+            else
+                p No people yet
+                        

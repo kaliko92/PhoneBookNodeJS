@@ -30,24 +30,13 @@ async function save(req, res,next){
 
 // show person
 function show(req, res) {
-    const id = req.params.id;    
-    
-    models.person.findAll({where: {id:id}}).then(result =>{
-        if(result){
-            message.responseSuccess(res, 200, result);
-        }else{
-            message.responseFailure(res, 404, "Person not found!", error);
-        }
-    }).catch(error=>{
-        message.responseFailure(res, 500, "Something went wrong!");
-    });
-  
+    return res.render('person/show');  
 }
 
 function index(req, res) {
     models.person.findAll().then(result =>{
-        message.responseSuccess(res, 200, result);
         // message.responseSuccess(res, 200, result);
+        return res.render('person/index', {people: result});
     }).catch(error=>{
         message.responseFailure(res, 500, "Something went wrong!", error);
     });

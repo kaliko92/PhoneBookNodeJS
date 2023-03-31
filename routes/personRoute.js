@@ -4,10 +4,15 @@ const checkAuthMiddleware = require('../middleware/check-auth');
 
 const router = express.Router();
 
-router.post("/person", checkAuthMiddleware.checkAuth,  personController.save);
-router.get("/person", checkAuthMiddleware.checkAuth, personController.index);
-router.get("/person/:id", checkAuthMiddleware.checkAuth, personController.show);
-router.patch("/person/:id", checkAuthMiddleware.checkAuth, personController.update);
-router.delete("/person/:id", checkAuthMiddleware.checkAuth, personController.destroy);
+// router.post("/person", checkAuthMiddleware.checkAuth,  personController.save);
+// router.get("/person", checkAuthMiddleware.checkAuth, personController.index);
+// router.get("/person/:id", checkAuthMiddleware.checkAuth, personController.show);
+// router.patch("/person/:id", checkAuthMiddleware.checkAuth, personController.update);
+// router.delete("/person/:id", checkAuthMiddleware.checkAuth, personController.destroy);
+router.post("/person",   personController.save);
+router.get("/person",  personController.index);
+router.get("/person/:id",  personController.show);
+router.patch("/person/:id",  personController.update);
+router.delete("/person/:id",  personController.destroy);
 
 module.exports = router;

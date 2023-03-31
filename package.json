@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-watch": "sass --no-source-map --watch resources/sass/style.scss public/css/style.css"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,9 @@
     "mysql2": "^2.3.3",
     "nodemon": "^2.0.15",
     "parse": "^3.4.1",
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.60.0",
     "sequelize": "^6.17.0"
   }
 }
