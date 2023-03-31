@@ -4,10 +4,10 @@ const checkAuthMiddleware = require('../middleware/check-auth');
 
 const router = express.Router();
 
-router.post("/contacts/contact", checkAuthMiddleware.checkAuth,  contactController.save);
-router.get("/contacts/contact", checkAuthMiddleware.checkAuth, contactController.index);
-router.get("/contacts/contact/:id", checkAuthMiddleware.checkAuth, contactController.show);
-router.patch("/contacts/contact/:id", checkAuthMiddleware.checkAuth, contactController.update);
-router.delete("/contacts/contact/:id", checkAuthMiddleware.checkAuth, contactController.destroy);
+router.post("/contact", checkAuthMiddleware.checkAuth,  contactController.save);
+router.get("/contact", checkAuthMiddleware.checkAuth, contactController.index);
+router.get("/contact/:id", checkAuthMiddleware.checkAuth, contactController.show);
+router.patch("/contact/:id", checkAuthMiddleware.checkAuth, contactController.update);
+router.delete("/contact/:id", checkAuthMiddleware.checkAuth, contactController.destroy);
 
 module.exports = router;

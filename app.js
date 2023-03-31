@@ -29,6 +29,6 @@ app.use(multipart());
 app.use("/api", personRoute);
 app.use("/api", contactRoute);
 
-app.use("/auth/user", userRoute);
+app.use("/auth", userRoute);
 
 module.exports = app;
