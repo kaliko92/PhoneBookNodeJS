@@ -10,7 +10,7 @@ write this command
 then
 - npm --save install
 
-go to mysql and create database "mydatabase"
+go to mysql and create database "DbPhoneBookNodeJs"
 
 write this command in visual code
 - sequelize db:migrate
@@ -31,19 +31,19 @@ then try write previews command again -->
 
 |**Method**| **URL**                              | **Action**                |
 |:--------:|:------------------------------------:|:-------------------------:|
-|**Get**   |localhos:3000/api/people/person       | Get all people            |
-|**Get**   |localhos:3000/api/people/person/id    | Get a specific person     |
-|**Post**  |localhos:3000/api/people/person       | Create a new person       |
-|**Patch** |localhos:3000/api/people/person/id    | Update an existing person |
-|**Delete**|localhos:3000/api/people/person/id    | Delete an existing person |
+|**Get**   |localhos:3000/api/person       | Get all people            |
+|**Get**   |localhos:3000/api/person/id    | Get a specific person     |
+|**Post**  |localhos:3000/api/person       | Create a new person       |
+|**Patch** |localhos:3000/api/person/id    | Update an existing person |
+|**Delete**|localhos:3000/api/person/id    | Delete an existing person |
 
 |**Method**| **URL**                              | **Action**                |
 |:--------:|:------------------------------------:|:-------------------------:|
-|**Get**   |localhos:3000/api/contacts/contact       | Get all contacts           |
-|**Get**   |localhos:3000/api/contacts/contact/id    | Get a specific contact     |
-|**Post**  |localhos:3000/api/contacts/contact       | Create a new contact       |
-|**Patch** |localhos:3000/api/contacts/contact/id    | Update an existing contact |
-|**Delete**|localhos:3000/api/contacts/contact/id    | Delete an existing contact |
+|**Get**   |localhos:3000/api/contact       | Get all contacts           |
+|**Get**   |localhos:3000/api/contact/id    | Get a specific contact     |
+|**Post**  |localhos:3000/api/contact       | Create a new contact       |
+|**Patch** |localhos:3000/api/contact/id    | Update an existing contact |
+|**Delete**|localhos:3000/api/contact/id    | Delete an existing contact |
 
 
 
